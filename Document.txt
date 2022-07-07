@@ -1,0 +1,34 @@
+Category making::
+------------------
+------------------
+php artisan make:migration create_categories_table
+#adding table field
+php artisan migrate
+php artisan create:model Categorry
+#Coding in Model/Category
+#php artisan make:controller CategoryController
+
+
+
+
+
+
+
+@ elements::
+------------
+------------
+@include('view file name') // to fetch a view file code
+@yield('section name') // to fetch a section code
+
+
+@extends('view master file name') // to call a master file code
+
+@section('section name')  //which will be yielded in master blade file
+	section code
+@endsection
+
+Tips::
+------
+@section('title', 'title_name') //section can store a value in a variable
+@yield('title') // which value can be add in any portion of a source_code by this
+
